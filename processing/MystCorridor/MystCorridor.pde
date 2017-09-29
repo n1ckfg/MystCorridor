@@ -13,11 +13,11 @@ void setup() {
   rooms = new ArrayList<Room>();
   
   Room room1 = new Room("room1");
-  room1.southWall.nextRoom = "room2";
+  room1.northWall.nextRoom = "room2";
   rooms.add(room1);
     
   Room room2 = new Room("room2");
-  room2.northWall.nextRoom = "room1";
+  room2.southWall.nextRoom = "room1";
   rooms.add(room2);
   
   currentRoom = getRoom("room1");
