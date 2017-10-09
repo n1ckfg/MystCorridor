@@ -13,7 +13,7 @@ function moveLeft() {
 }
 
 function moveForward() {
-    if (currentRoom.currentWall.nextRoom != "none") {
+    if (currentRoom.currentWall.nextRoom !== "none") {
         switchRoom();
     }
 }
